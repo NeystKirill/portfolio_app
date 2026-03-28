@@ -1,0 +1,17 @@
+.ticker-bar {
+  position: relative; z-index: 1;
+  border-top: 1px solid rgba(0,255,163,.1);
+  border-bottom: 1px solid rgba(0,255,163,.1);
+  background: rgba(0,255,163,.03);
+  overflow: hidden; padding: 12px 0;
+}
+.ticker-inner {
+  display: flex; gap: 60px; white-space: nowrap;
+  animation: ticker 30s linear infinite;
+}
+.ticker-item {
+  font-family: 'Space Mono', monospace; font-size: .62rem;
+  letter-spacing: .22em; text-transform: uppercase;
+  color: var(--text-dim); flex-shrink: 0;
+}
+.ticker-item span { color: var(--green); margin-right: 8px; }
